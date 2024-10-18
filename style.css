@@ -1,0 +1,152 @@
+body {
+    font-family: 'Roboto' , Sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.texte-centre_SF {
+    width: 60%; /* Définit la largeur du bloc */
+    margin: 0 auto; /* Centre le bloc horizontalement */
+    text-align: justify; /* Justifie le texte pour qu'il soit aligné des deux côtés */
+    line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
+    padding: 20px; /* Ajoute du padding pour un peu d'espace intérieur */
+}
+
+.texte-centre {
+    width: 60%; /* Définit la largeur du bloc */
+    margin: 0 auto; /* Centre le bloc horizontalement */
+    text-align: justify; /* Justifie le texte pour qu'il soit aligné des deux côtés */
+    line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
+    padding: 20px; /* Ajoute du padding pour un peu d'espace intérieur */
+    background-color: #2e2e2e; /* Ajoute une couleur de fond (optionnel) */
+    border-radius: 8px; /* Arrondit les coins (optionnel) */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet visuel (optionnel) */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.highlight {
+    border: 2px solid #F5F5DC; /* Couleur de la bordure */
+    padding: 5px; /* Espacement à l'intérieur de la bordure */
+    border-radius: 5px; /* Coins arrondis (optionnel) */
+    background-color: #979795; /* Couleur de fond semi-transparente (optionnel) */
+}
+
+.nom {
+    font-weight: bold; /* Met le texte en gras */
+    color: #F5F5DC; /* Change la couleur (ici, un doré) */
+    font-size: 28px; /* Ajustez la taille selon vos préférences */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Affiche les éléments de la liste en ligne */
+    margin: 0 15px; /* Espace entre les liens */
+    position: relative; /* Nécessaire pour le positionnement absolu de .contact-info */
+}
+
+.contact-info {
+    display: none; /* Masqué par défaut */
+    position: absolute; /* Positionnement absolu */
+    background-color: #333; /* Couleur de fond des informations */
+    color: #fff; /* Couleur du texte */
+    padding: 10px; /* Espacement à l'intérieur */
+    border: 1px solid #ccc; /* Bordure pour délimiter */
+    z-index: 1000; /* S'assurer que cela est au-dessus des autres éléments */
+    width: 200px; /* Largeur de la boîte d'information */
+    left: 0; /* Positionner à gauche */
+    top: 100%; /* Juste en dessous de l'élément parent */
+}
+
+/* Ajoutez ce style pour afficher les informations de contact au survol */
+.contact:hover .contact-info {
+    display: block; /* Affiche les informations de contact au survol */
+}
+
+
+body {
+    margin-top: 60px; /* Ajoute un espace en haut pour éviter que le contenu soit caché par l'en-tête */
+}
+
+nav ul li a {
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement */
+    font-weight: bold; /* Mettre en gras */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#projets .projet {
+    margin-bottom: 30px;
+}
+
+#projets img {
+    width: 300px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour maintenir le ratio */
+    border-radius: 10px; /* Bords arrondis pour l'image */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a[href*=".pdf"] {
+    color: #F5F5DC; /* Choisissez la couleur que vous souhaitez */
+    text-decoration: none; /* Enlève le soulignement, si souhaité */
+}
+
+a[href*=".pdf"]:hover {
+    text-decoration: underline; /* Soulignement au survol, optionnel */
+}
+
+h1 {
+    font-size: 54px; /* Ajustez la taille selon vos préférences */
+    font-weight: bold; /* Rend le texte plus épais */
+    color: #F5F5DC; /* Définit la couleur des titres h3 */
+}
+
+h2 {
+    font-size: 44px; /* Ajustez la taille selon vos préférences */
+    font-weight: bold; /* Rend le texte plus épais */
+    color: #F5F5DC; /* Définit la couleur des titres h3 */
+}
+
+h3 {
+    font-size: 34px; /* Ajustez la taille selon vos préférences */
+    font-weight: bold; /* Rend le texte plus épais */
+    color: #F5F5DC; /* Définit la couleur des titres h3 */
+}
+
+h4 {
+    font-size: 24px; /* Ajustez la taille selon vos préférences */
+    font-weight: bold; /* Rend le texte plus épais */
+    color: #F5F5DC; /* Définit la couleur des titres h3 */
+}
+
+
