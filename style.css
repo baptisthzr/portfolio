@@ -46,8 +46,18 @@ header {
     padding: 10px 0;
     text-align: center;
     z-index: 1000;
+    animation: fadeIn 1s ease-in-out;
+   
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .highlight {
     border: 2px solid #F5F5DC; /* Couleur de la bordure */
     padding: 5px; /* Espacement à l'intérieur de la bordure */
@@ -61,23 +71,28 @@ header {
     font-size: 28px; /* Ajustez la taille selon vos préférences */
 }
 
-.AZ {
-    font-weight: bold; /* Met le texte en gras */
-    font-size: 15px; /* Ajustez la taille selon vos préférences */
-}
-
 nav ul li a {
-    color: #fff; /* Couleur par défaut des liens */
-    text-decoration: none; /* Pas de soulignement */
-    font-weight: bold; /* Mettre en gras */
-    transition: all 0.3s ease; /* Transition pour l'effet de survol */
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #FFD700; /* Couleur survolée (doré dans cet exemple) */
-    font-size: 26px; /* Augmenter la taille du texte sur le survol */
-    transform: scale(1.1); /* Agrandir légèrement le texte */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
 }
+
+nav ul li a:hover::after {
+    width: 100%; /* Le soulignement apparaît */
+}
+
 
 nav ul {
     list-style: none;
@@ -129,10 +144,28 @@ section {
 }
 
 #projets img {
+    transition: transform 0.3s, filter 0.3s;
     width: 300px; /* Largeur de l'image */
     height: auto; /* Hauteur automatique pour maintenir le ratio */
     border-radius: 10px; /* Bords arrondis pour l'image */
 }
+
+#projets img:hover {
+    transform: scale(1.1); /* Zoom */
+    filter: brightness(1.2); /* Rendre l'image plus lumineuse */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 footer {
     background-color: #333;
@@ -143,6 +176,18 @@ footer {
     bottom: 0;
     width: 100%;
 }
+a[href*=".pdf"]:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+a[href*=".pdf"]:hover::after {
+    content: ' 📄';
+    margin-left: 5px;
+
+}
+
+
 
 a[href*=".pdf"] {
     color: #F5F5DC; /* Choisissez la couleur que vous souhaitez */
@@ -176,5 +221,3 @@ h4 {
     font-weight: bold; /* Rend le texte plus épais */
     color: #F5F5DC; /* Définit la couleur des titres h3 */
 }
-
-
