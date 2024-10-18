@@ -66,6 +66,19 @@ header {
     font-size: 15px; /* Ajustez la taille selon vos préférences */
 }
 
+nav ul li a {
+    color: #fff; /* Couleur par défaut des liens */
+    text-decoration: none; /* Pas de soulignement */
+    font-weight: bold; /* Mettre en gras */
+    transition: all 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Couleur survolée (doré dans cet exemple) */
+    font-size: 26px; /* Augmenter la taille du texte sur le survol */
+    transform: scale(1.1); /* Agrandir légèrement le texte */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
