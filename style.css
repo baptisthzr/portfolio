@@ -121,7 +121,9 @@ nav ul li {
 /* Ajoutez ce style pour afficher les informations de contact au survol */
 .contact:hover .contact-info {
     display: block; /* Affiche les informations de contact au survol */
+    
 }
+
 
 
 body {
@@ -220,4 +222,27 @@ h4 {
     font-size: 24px; /* Ajustez la taille selon vos préférences */
     font-weight: bold; /* Rend le texte plus épais */
     color: #F5F5DC; /* Définit la couleur des titres h3 */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #333; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 50%; /* Arrondir en cercle */
+    width: 40px; /* Largeur du bouton */
+    height: 40px; /* Hauteur du bouton */
+    font-size: 20px; /* Taille de la flèche */
+    cursor: pointer; /* Curseur de main */
+    margin: 0 10px; /* Espacement entre les flèches */
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #555; /* Couleur de fond au survol */
 }
