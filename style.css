@@ -8,22 +8,22 @@ body {
 }
 
 .texte-centre_SF {
-    width: 60%; /* Définit la largeur du bloc */
-    margin: 0 auto; /* Centre le bloc horizontalement */
-    text-align: justify; /* Justifie le texte pour qu'il soit aligné des deux côtés */
-    line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
-    padding: 20px; /* Ajoute du padding pour un peu d'espace intérieur */
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
 }
 
 .texte-centre {
-    width: 60%; /* Définit la largeur du bloc */
-    margin: 0 auto; /* Centre le bloc horizontalement */
-    text-align: justify; /* Justifie le texte pour qu'il soit aligné des deux côtés */
-    line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
-    padding: 20px; /* Ajoute du padding pour un peu d'espace intérieur */
-    background-color: #2e2e2e; /* Ajoute une couleur de fond (optionnel) */
-    border-radius: 8px; /* Arrondit les coins (optionnel) */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet visuel (optionnel) */
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 600px) {
@@ -59,16 +59,16 @@ header {
     }
 }
 .highlight {
-    border: 2px solid #F5F5DC; /* Couleur de la bordure */
-    padding: 5px; /* Espacement à l'intérieur de la bordure */
-    border-radius: 5px; /* Coins arrondis (optionnel) */
-    background-color: #979795; /* Couleur de fond semi-transparente (optionnel) */
+    border: 2px solid #F5F5DC;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #979795;
 }
 
 .nom {
-    font-weight: bold; /* Met le texte en gras */
-    color: #F5F5DC; /* Change la couleur (ici, un doré) */
-    font-size: 28px; /* Ajustez la taille selon vos préférences */
+    font-weight: bold;
+    color: #F5F5DC;
+    font-size: 28px;
 }
 
 nav ul li a {
@@ -90,7 +90,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-    width: 100%; /* Le soulignement apparaît */
+    width: 100%;
 }
 
 
@@ -100,40 +100,32 @@ nav ul {
 }
 
 nav ul li {
-    display: inline; /* Affiche les éléments de la liste en ligne */
-    margin: 0 15px; /* Espace entre les liens */
-    position: relative; /* Nécessaire pour le positionnement absolu de .contact-info */
+    display: inline;
+    margin: 0 15px;
+    position: relative;
 }
 
 .contact-info {
-    display: none; /* Masqué par défaut */
-    position: absolute; /* Positionnement absolu */
-    background-color: #333; /* Couleur de fond des informations */
-    color: #fff; /* Couleur du texte */
-    padding: 10px; /* Espacement à l'intérieur */
-    border: 1px solid #ccc; /* Bordure pour délimiter */
-    z-index: 1000; /* S'assurer que cela est au-dessus des autres éléments */
-    width: 200px; /* Largeur de la boîte d'information */
-    left: 0; /* Positionner à gauche */
-    top: 100%; /* Juste en dessous de l'élément parent */
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 200px;
+    left: 0;
+    top: 100%;
 }
 
-/* Ajoutez ce style pour afficher les informations de contact au survol */
+/* Affiche les informations de contact au survol */
 .contact:hover .contact-info {
-    display: block; /* Affiche les informations de contact au survol */
+    display: block;
     
 }
 
-
-
 body {
-    margin-top: 60px; /* Ajoute un espace en haut pour éviter que le contenu soit caché par l'en-tête */
-}
-
-nav ul li a {
-    color: #fff; /* Couleur des liens */
-    text-decoration: none; /* Pas de soulignement */
-    font-weight: bold; /* Mettre en gras */
+    margin-top: 60px;
 }
 
 section {
@@ -143,18 +135,23 @@ section {
 
 #projets .projet {
     margin-bottom: 30px;
-}
+    background-color: #2e2e2e; /* Couleur de fond de la section "CV & Lettre de motivation" */
+    border-radius: 8px; /* Même style arrondi que pour les autres sections */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
 
 #projets img {
     transition: transform 0.3s, filter 0.3s;
-    width: 300px; /* Largeur de l'image */
-    height: auto; /* Hauteur automatique pour maintenir le ratio */
-    border-radius: 10px; /* Bords arrondis pour l'image */
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
 }
 
 #projets img:hover {
-    transform: scale(1.1); /* Zoom */
-    filter: brightness(1.2); /* Rendre l'image plus lumineuse */
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
 .fade-in {
@@ -167,7 +164,6 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 footer {
     background-color: #333;
@@ -189,80 +185,99 @@ a[href*=".pdf"]:hover::after {
 
 }
 
-
-
 a[href*=".pdf"] {
-    color: #F5F5DC; /* Choisissez la couleur que vous souhaitez */
-    text-decoration: none; /* Enlève le soulignement, si souhaité */
+    color: #F5F5DC;
+    text-decoration: none;
 }
 
 a[href*=".pdf"]:hover {
-    text-decoration: underline; /* Soulignement au survol, optionnel */
+    text-decoration: underline;
 }
 
 h1 {
-    font-size: 54px; /* Ajustez la taille selon vos préférences */
-    font-weight: bold; /* Rend le texte plus épais */
-    color: #F5F5DC; /* Définit la couleur des titres h3 */
+    font-size: 54px;
+    font-weight: bold;
+    color: #F5F5DC;
 }
 
 h2 {
-    font-size: 44px; /* Ajustez la taille selon vos préférences */
-    font-weight: bold; /* Rend le texte plus épais */
-    color: #F5F5DC; /* Définit la couleur des titres h3 */
+    font-size: 44px;
+    font-weight: bold;
+    color: #F5F5DC;
 }
 
 h3 {
-    font-size: 34px; /* Ajustez la taille selon vos préférences */
-    font-weight: bold; /* Rend le texte plus épais */
-    color: #F5F5DC; /* Définit la couleur des titres h3 */
+    font-size: 34px;
+    font-weight: bold;
+    color: #F5F5DC;
 }
 
 h4 {
-    font-size: 24px; /* Ajustez la taille selon vos préférences */
-    font-weight: bold; /* Rend le texte plus épais */
-    color: #F5F5DC; /* Définit la couleur des titres h3 */
+    font-size: 24px;
+    font-weight: bold;
+    color: #F5F5DC;
 }
 
 .navigation {
-
     display: flex;
-
     justify-content: center;
-
     margin-top: 20px;
-
 }
-
-
 
 #prev-btn, #next-btn {
-
     background-color: #2e2e2e;
-
     color: #F5F5DC;
-
     border: none;
-
     padding: 10px 20px;
-
     font-size: 18px;
-
     cursor: pointer;
-
     margin: 0 10px;
-
     border-radius: 5px;
-
     transition: background-color 0.3s;
-    right: 0%;
-
 }
 
-
-
 #prev-btn:hover, #next-btn:hover {
-
     background-color: #444;
+}
 
+button.disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Animation pour le conteneur entier (texte, image et fond) */
+@keyframes slideInFull {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+        background-color: #2e2e2e; /* Fond initial */
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        background-color: #2e2e2e; /* Même fond pour l'entrée */
+    }
+}
+
+@keyframes slideOutFull {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+        background-color: #2e2e2e; /* Fond de départ */
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+        background-color: #2e2e2e; /* Fond de fin */
+    }
+}
+
+/* Applique l'animation sur le conteneur des projets */
+#projet-container.slide-in {
+    animation: slideInFull 0.8s ease forwards; /* Durée augmentée pour plus de fluidité */
+}
+
+#projet-container.slide-out {
+    animation: slideOutFull 0.8s ease forwards; /* Durée augmentée pour plus de fluidité */
 }
