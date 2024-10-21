@@ -238,9 +238,9 @@ h4 {
 
 #prev-btn, #next-btn {
 
-    background-color: #333;
+    background-color: #2e2e2e;
 
-    color: #fff;
+    color: #F5F5DC;
 
     border: none;
 
@@ -255,6 +255,7 @@ h4 {
     border-radius: 5px;
 
     transition: background-color 0.3s;
+    right: 0%;
 
 }
 
