@@ -1,27 +1,58 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let currentProject = 0;
-    const projects = document.querySelectorAll('.projet');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
+// Sélection des éléments du DOM
 
-    function showProject(index) {
-        projects.forEach((project, i) => {
-            project.style.display = (i === index) ? 'block' : 'none';
-        });
-    }
+const projets = document.querySelectorAll('.projet');
 
-    prevBtn.addEventListener('click', function() {
-        currentProject = (currentProject > 0) ? currentProject - 1 : projects.length - 1;
-        showProject(currentProject);
+const prevBtn = document.getElementById('prev-btn');
+
+const nextBtn = document.getElementById('next-btn');
+
+
+
+let currentIndex = 0;
+
+
+
+// Fonction pour afficher le projet en fonction de l'index
+
+function afficherProjet(index) {
+
+    projets.forEach((projet, i) => {
+
+        projet.style.display = i === index ? 'block' : 'none';
+
     });
 
-    nextBtn.addEventListener('click', function() {
-        currentProject = (currentProject < projects.length - 1) ? currentProject + 1 : 0;
-        showProject(currentProject);
-    });
+}
 
-    // Afficher le premier projet au chargement
-    showProject(currentProject);
+
+
+// Navigation vers le projet précédent
+
+prevBtn.addEventListener('click', () => {
+
+    currentIndex = (currentIndex === 0) ? projets.length - 1 : currentIndex - 1;
+
+    afficherProjet(currentIndex);
+
+});
+
+
+
+// Navigation vers le projet suivant
+
+nextBtn.addEventListener('click', () => {
+
+    currentIndex = (currentIndex === projets.length - 1) ? 0 : currentIndex + 1;
+
+    afficherProjet(currentIndex);
+
+});
+
+
+
+// Afficher le premier projet au chargement de la page
+
+afficherProjet(currentIndex);
 
     // Ajouter le défilement fluide pour les liens de navigation
     document.querySelectorAll('nav a').forEach(anchor => {
@@ -38,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-})
+
 
 
 
