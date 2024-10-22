@@ -385,3 +385,8 @@ h4 {
 .blinking-text span:nth-child(10)::after { animation-delay: 0.9s; } /* i */
 .blinking-text span:nth-child(11)::after { animation-delay: 1.0s; } /* o */
 .blinking-text span:nth-child(12)::after { animation-delay: 1.1s; } /* n */
+
+
+
+
+
