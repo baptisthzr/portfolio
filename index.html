@@ -1,298 +1,153 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Baptiste Houzier</title>
+    <title>Baptiste Houzier - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-      rel="stylesheet">
-  </head>
-    <body>
-      <header class="sticky-section sticky-section--1">
-        <video
-          class="sticky-section__video"
-          autoplay
-          muted
-          loop
-          src="images/Kanagawa.mp4"
-        ></video>
-          <h1 class="sticky-section__main-title">PORTFOLIO</h1>
-          <p class="sticky-section__txt-info">Baptiste Houzier</p>
-          <div class="footer-icons">
-            <!-- Logo Contact -->
-            <div class="contact">
-                <img src="images/contact.png" alt="Contact" class="contact-logo">
-                <div class="contact-info">
-                    <p>Téléphone :<br> +33 6 45 24 23 05</p><br>
-                    <p>Email : <a href="mailto:baptistehzr@icloud.com"><br>baptistehzr@icloud.com</a></p>
-                </div>
+    <script src="script.js" defer></script> <!-- Ajout du script JavaScript -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Présentation"><span class="highlight">Présentation</span></a></li>
+                <li><a href="#projets"><span class="highlight">Projets</span></a></li>
+                <li><a href="#cv-lettre-de-motivation"><span class="highlight">CV & Lettre de motivation</span></a></li>
+                <li><a href="https://www.linkedin.com/in/baptiste-houzier/" target="_blank"><span class="highlight">LinkedIn</span></a></li>
+                <li class="contact">
+                    <strong><span class="highlight">Contact</span></strong>
+                    <div class="contact-info">
+                        <p>Téléphone :<br> +33 6 45 24 23 05</p>
+                        <p>Email : <a href="mailto:baptistehzr@icloud.com">baptistehzr@icloud.com</a></p>
+                    </div>
+                </li>                            
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="Présentation">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p class="texte-centre_SF ">Je suis <span class="nom">Baptiste Houzier</span>, j'ai 20 ans, je possède le permis B ainsi que le permis A2. Je suis actuellement étudiant en deuxième année en Science des Données parcours Exploration & Modélisation Statistique (EMS) à l'IUT Grand Ouest Normandie.<br> Afin de parfaire mes connaissances dans l’exploitation des données, je recherche un stage en tant que chargé d’études statistiques.</p><br>
+        <div class="texte-centre_SF"><h4><u>Formation</u></h4>
+        <p> 
+            <strong>2022-2026</strong> : BUT Science des données, IUT Grand Ouest Normandie, Lisieux<br>
+            <strong>2022</strong> : baccalauréat général (SVT et SES, option mathématiques complémentaire), Bois-Colombes</p><br>
+        <h4><u>Compétences</u></h4>
+         <p><strong>Analyse de données et statistique</strong><br>
+            • Analyse de données<br>
+                •  Statistique inférentielle<br>
+                •  Statistique descriptive<br>
+                •  Méthodes de sondage<br><br>
+            <strong>Programmation et langages informatique</strong><br>
+            •  <strong>Python</strong> (Matplotlib, Numpy, Pandas, Seaborn, Scikit-Learn) <br>
+            •  <strong>R</strong> (ggplot2, dplyr, tidyr), SQL, SAS<br>
+            •  HTML, CSS, JavaScript<br><br>
+            <strong>Outils de business intelligences</strong><br>
+            •  <strong>Power BI</strong> et <strong>Tableau</strong><br>
+            •  <strong>Excel</strong> (formules avancées, tableaux croisés dynamiques)
+        </p><br>
+        <h4><u>Expérience</u></h4>
+        <p><strong><u>Depuis Octobre 2024 : Employé Polyvalent</u></strong><br>
+            Burger King Lisieux<br>
+        <p><strong><u>Janvier - Août 2024 : Employé Polyvalent</u></strong><br>
+            McDonald’s Neuilly-sur-Seine<br>
+            <br>
+            • Ouverture et fermeture du restaurant.<br>
+            • Préparation des commandes <br>
+            • Gestion des imprévus<br>
+            • Travail en équipe tout en étant capable de prendre des initiatives en autonomie.<br>
+            <br>
+            <strong><u>Juillet - Août 2023 : Adjoint Mécanicien</u></strong><br>
+            Service Garage de la Ville d’Asnières-sur-Seine<br>
+            <br>
+            • Entretien et maintenance de la flotte de véhicules municipaux<br>
+            • Gestion des urgences<br>
+            • Travail en équipe et en autonomie<br>
+        </p><br>
+        <h4><u>Qualités</u></h4>
+        <p> • Travail autonome et en équipe<br>
+            • Bonne communication oral et écrite <br>
+            • Sociable<br>
+            • Créatif<br>
+            • Dynamique<br>
+            • Esprit critique<br>
+        </div>
+        </section>
+
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <p class="texte-centre_SF ">Que ce soit en première ou en deuxième année, j'ai eu l'opportunité de réaliser plusieurs SAE (Situations d'Apprentissage et d'Évaluation). Voici quelques-unes de ces réalisations sur R, Python et SAS ! </p>
+        
+        <div class="texte-centre projet-active">
+            <div class="navigation">
+                <button id="prev-btn">&#9665;</button>
+                <button id="next-btn">&#9655;</button>
             </div>
-        
-            <!-- Logo LinkedIn -->
-            <a href="https://www.linkedin.com/in/baptiste-houzier/" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn" class="linkedin-logo">
-            </a>
-          </div>
-        
-      </header>
+            <div class="projet" id="projet-1">
+                <h3>Mise en oeuvre d’une enquête</h3>
+                <img src="images/cinema.jpg" alt="Projet 1">
+                <p><strong><span class="AZ">Présentation du projet</span> </strong> <br>
+                    L'objectif de ce projet est de réaliser une étude statistique sur les lycéens et leur rapport à l'art cinématographique. Un échantillon de 100 élèves a été interrogé au sein d'un lycée, et les réponses collectées ont été enregistrées dans un fichier CSV. Les données ont ensuite été analysées afin d'avoir des informations pertinentes.<br>
+                    <br><strong>Utilisation de</strong><br>
+                    • <strong>Langages de programmation</strong>: R pour l'analyse des données, LateX pour la génération du rapport au format PDF<br>
+                    <br><strong>Résultats</strong>
+                    <br>L'analyse a d'abord porté sur la caractérisation de l'échantillon pour évaluer la représentativité des résultats par rapport à l'ensemble du lycée. Une analyse des données concernant le rapport entre les lycéens et l’art cinématographique a été réalisée.
+                </p>
+                <p> Projet complet en <a href="docs/Mise_en_oeuvre_d_une_enquete.pdf" target="_blank"> <strong>PDF</strong></a>.</p>
+            </div>
 
-        <main>
-          <section class="sticky-section">
-              <h2 class="sticky-section__h2"> <p class="blinking-text">
-                <span data-letter="P">P</span>
-                <span data-letter="r">r</span>
-                <span data-letter="é">é</span>
-                <span data-letter="s">s</span>
-                <span data-letter="e">e</span>
-                <span data-letter="n">n</span>
-                <span data-letter="t">t</span>
-                <span data-letter="a">a</span>
-                <span data-letter="t">t</span>
-                <span data-letter="i">i</span>
-                <span data-letter="o">o</span>
-                <span data-letter="n">n</span>
+            <div class="projet" id="projet-2" style="display:none;">
+                <h3>Location de vélos Citibike</h3>
+                <img src="images/citibike.png" alt="Projet 2">
+                <p><strong><span class="AZ">Présentation du projet</span> </strong> <br>
+                    Ce projet consiste à créer des visualisations interactives des données de ventes pour aider les équipes à mieux comprendre les tendances et les performances des produits.
+                    <br><br><strong>Utilisation de</strong><br>
+                    • <strong>Langages de programmation</strong>: R (lubridate), LaTeX pour le rapport PDF<br>
+                    <br><strong>Résultats</strong>
+                    <br>L’étude a permis d’analyser la flotte de vélos ainsi que les caractéristiques d’utilisation. Il en ressort que la flotte de Citibike à New York est composée majoritairement de vélos classiques.
+                </p>
+                <p> Projet complet en <a href="docs/Rapport_Analyse_citibike.pdf" target="_blank"> <strong>PDF</strong></a>.</p>
+            </div>
 
-              </p></h2>
-          </section>
+            <div class="projet" id="projet-3" style="display:none;">
+                <h3>Conception et implémentation d’une base de données</h3>
+                <img src="images/conce_impl_bdd.jpg" alt="Projet 3">
+                <p><strong><span class="AZ">Présentation du projet</span> </strong> <br>
+                    Ce projet vise à aider une petite commune et leur proxi local. La solution proposée se décompose en quatre parties principales : la conception de base de données, le stockage des produits, la gestion des ventes et la génération de rapports. Chacune de ces parties vise à résoudre un aspect spécifique du problème et contribue à la mise en place d’un système efficace et fonctionnel.
+                    <br><br><strong>Utilisation de</strong><br>
+                    • <strong>Langages de programmation</strong>: Python (datetime, sqlite3, package as pk, pandas as pd, csv, random), R, SQL, LaTeX pour le rapport PDF<br>
+                    <br><strong>Résultats</strong>
+                    <br>Ce projet a permis de développer une solution locale efficace pour la gestion des stocks, l’encaissement des clients et l’analyse des ventes dans la petite commune de Wulverdinghe. Face à la coupure d’Internet qui limitait l’accès aux outils de la centrale de Paris, nous avons réussi à mettre en place un système fonctionnel.
+                </p>
+                <p> Projet complet en <a href="docs/conception.pdf" target="_blank"> <strong>PDF</strong></a>.</p>
+            </div>
 
-          <section class="content-section content-section--1">
-            <div class="container">
-
-              <div class="column left-column">
-                  <!-- Formations -->
-                <div class="formation">
-                  <h4><u>Formation</u></h4><br>
-                  <p>
-                    <strong>2022-2026 : BUT Science des données, IUT Grand Ouest Normandie, Lisieux<br><br>
-                    2022: baccalauréat général (SVT et SES, option mathématiques complémentaire), Bois-Colombes</strong> 
-                  </p>
-                </div>
-              
-          
-                  <!-- Expérience -->
-                <div class="experience">
-                  <h4><u>Expérience</u></h4><br>
-                  <p>
-                    <strong><u>Janvier - Août 2024 : Employé Polyvalent</u><br>
-                    McDonald’s Neuilly-sur-Seine<br><br>
-                    • Ouverture et fermeture du restaurant.<br>
-                    • Préparation des commandes <br>
-                    • Gestion des imprévus<br>
-                    • Travail en équipe tout en étant capable de prendre des initiatives en autonomie. <br><br>
-                    <u>Juillet - Août 2023 : Adjoint Mécanicien</u><br>
-                    Service Garage de la Ville d’Asnières-sur-Seine<br>
+            <div class="projet" id="projet-4">
+                <h3>Estimation par sondage simple</h3>
+                <img src="images/echantillon-population.jpg" alt="Projet 1">
+                <p><strong><span class="AZ">Présentation du projet</span> </strong> <br>
+                    Ce projet vise à réaliser une étude de statistiques inférentielles sur des échantillons de données. L’objectif est de déterminer les différentes lois de probabilité pouvant être identifiées dans les données.
+                    <br><br><strong>Utilisation de</strong><br>
+                    • <strong>Langages de programmation</strong>: SAS, LaTeX pour la rédaction du rapport PDF
                     <br>
-                    • Entretien et maintenance de la flotte de véhicules municipaux<br>
-                    • Gestion des urgences<br>
-                    • Travail en équipe et en autonomie<br></strong>
-                  </p>
-                </div>
-              </div>
-
-              <div class="column right-column">
-                <!-- Compétences -->
-                <div class="competences">
-                  <h4><u>Compétences</u></h4><br>
-                  <p>
-                    <strong>Analyse de données et statistique<br>
-                    • Analyse de données<br>
-                    • Statistique inférentielle<br>
-                    • Statistique descriptive<br>
-                    • Méthodes de sondage<br><br>
-          
-                    Programmation et langages informatiques<br>
-                    • Python (Matplotlib, Numpy, Pandas, Seaborn, Scikit-Learn) <br>
-                    • R (ggplot2, dplyr, tidyr), SQL, SAS<br>
-                    • HTML, CSS, JavaScript<br><br>
-          
-                    Outils de business intelligence<br>
-                    • Power BI et Tableau<br>
-                    • Excel (formules avancées, tableaux croisés dynamiques)</strong>
-                  </p>
-                </div>
-          
-                <!-- Qualités -->
-                <div class="qualites">
-                  <h4><u>Qualités</u></h4><br>
-                  <p><strong>
-                    • Travail autonome et en équipe<br>
-                    • Bonne communication orale et écrite<br>
-                    • Sociable<br>
-                    • Créatif<br>
-                    • Dynamique<br>
-                    • Esprit critique</strong>
-                  </p>
-                </div>
-              </div>
+                    <br><strong>Résultats</strong>
+                    <br>L’étude a révélé que chaque échantillon suit une loi de probabilité différente. Nous avons notamment identifié les lois log-normale, uniforme. Cette première analyse souligne que les échantillons ne partagent pas la même distribution, ce qui démontre l’importance de sélectionner des modèles statistiques adaptés à chaque type de distribution.
+                </p>
+                <p> Projet complet en <a href="docs/RapportSAS.pdf" target="_blank"> <strong>PDF</strong></a>.</p>
             </div>
-          </section>
-
-          <section class="sticky-section sticky-section--3">
-            <h2 class="sticky-section__h2">Mes projets</h2>
-          </section>
-
-          <section class="content-section content-section--3">
-            <div class="cards-container">
-              <div class="card" data-modal="modal1">
-                <img src="images/cinema.webp" alt="Cinéma" class="card-image">
-                <div class="card-phrase">Mise en oeuvre d'une enquête
-                </div>
-                <div class="card-content">
-                
-                </div>
-              </div>
-              <div class="card" data-modal="modal2">
-                <img src="images/citibike.webp" alt="Image 2" class="card-image">
-                <div class="card-phrase">Location de vélos Citibike</div>
-                <div class="card-content">
-                  
-                </div>
-              </div>
-              <div class="card" data-modal="modal3">
-                <img src="images/conce_impl_bdd.webp" alt="Image 3" class="card-image">
-                <div class="card-phrase">Conception et implémentation d’une base de données
-                </div>
-                <div class="card-content">
-                
-                </div>
-              </div>
-              <div class="card" data-modal="modal4">
-                <img src="images/estimation.webp" alt="Image 4" class="card-image">
-                <div class="card-phrase">Estimation par sondage simple</div>
-                <div class="card-content">
-               
-                </div>
-              </div>
-            </div>
+        </div>
 
         
+    </section>
 
-              <!-- Modales pour les popups -->
-            <div class="modal" id="modal1">
-              <div class="modal-content">
-                <h2>Mise en œuvre d'une enquête</h2>
-                <!-- Ajout de l'image -->
-                <img src="images/cinema.jpg" alt="Cinéma" class="modal-image">
-    
-                <!-- Présentation du projet -->
-                <h3>Présentation du projet :</h3>
-                <p>
-                L'objectif de ce projet est de réaliser une étude statistique sur les lycéens et leur rapport à l'art cinématographique. 
-                Un échantillon de 100 élèves a été interrogé au sein d'un lycée, et les réponses collectées ont été enregistrées dans un fichier CSV. 
-                Les données ont ensuite été analysées afin d'obtenir des informations pertinentes.
-                </p><br>
+    <section id="cv-lettre-de-motivation">
+        <h2>Mon CV & ma lettre de motivation</h2>
+        <div class="texte-centre">
+            <a href="docs/CV_STAGE_COLOMBES.pdf" target="_blank"> <strong>CV</strong></a><br>
+            <a href="docs/LM_STAGE_COLOMBES.pdf" target="_blank"> <strong>Lettre de motivation</strong></a><br>
+        </div>
+    </section>
+    <script src="script.js" defer></script>
 
-                <!-- Utilisation de -->
-                <h3>Utilisation de :</h3>
-                <p>
-                • Langages de programmation : R pour l'analyse des données, LaTeX pour la génération du rapport au format PDF.
-                </p><br>
-
-                <!-- Résultats -->
-                <h3>Résultats :</h3>
-                <p>
-                L'analyse a d'abord porté sur la caractérisation de l'échantillon pour évaluer la représentativité des résultats par rapport à l'ensemble du lycée. 
-                Une analyse des données concernant le rapport entre les lycéens et l’art cinématographique a été réalisée.
-                </p><br>
-
-                <!-- Lien vers le projet complet -->
-                <p>Projet complet en <a href="docs/Mise_en_oeuvre_d_une_enquete.pdf" target="_blank"><strong>PDF</strong></a>.</p>
-              </div>
-            </div>
-
-            <div class="modal" id="modal2">
-              <div class="modal-content">
-                <h2>Location de vélos Citibike</h2>
-                <!-- Ajout de l'image -->
-                <img src="images/citibike.png" alt="Citibike" class="modal-image">
-    
-                <!-- Présentation du projet -->
-                <h3>Présentation du projet :</h3>
-                <p>
-                Ce projet consiste à créer des visualisations interactives des données de ventes pour aider les équipes à mieux comprendre les tendances et les performances des produits.
-                </p><br>
-
-                <!-- Utilisation de -->
-                <h3>Utilisation de :</h3>
-                <p>
-                • Langages de programmation : R (lubridate), LaTeX pour le rapport PDF.
-                </p><br>
-
-                <!-- Résultats -->
-                <h3>Résultats :</h3>
-                <p>
-                L’étude a permis d’analyser la flotte de vélos ainsi que les caractéristiques d’utilisation. Il en ressort que la flotte de Citibike à New York est composée majoritairement de vélos classiques.
-                </p><br>
-
-                <!-- Lien vers le projet complet -->
-                <p>Projet complet en <a href="docs/Rapport_Analyse_citibike.pdf" target="_blank"><strong>PDF</strong></a>.</p>
-              </div>
-            </div>
-
-            <div class="modal" id="modal3">
-              <div class="modal-content">
-                <h2>Conception et implémentation d’une base de données</h2>
-                <!-- Ajout de l'image -->
-                <img src="images/conce_impl_bdd.jpg" alt="Citibike" class="modal-image">
-    
-                <!-- Présentation du projet -->
-                <h3>Présentation du projet :</h3>
-                <p>
-                  Ce projet vise à aider une petite commune et leur proxi local. La solution proposée se décompose en quatre parties principales : la conception de base de données, le stockage des produits, la gestion des ventes et la génération de rapports. Chacune de ces parties vise à résoudre un aspect spécifique du problème et contribue à la mise en place d’un système efficace et fonctionnel.
-                </p><br>
-
-                <!-- Utilisation de -->
-                <h3>Utilisation de :</h3>
-                <p>
-                • Langages de programmation : Python (datetime, sqlite3, package as pk, pandas as pd, csv, random), R, SQL, LaTeX pour le rapport PDF
-                </p><br>
-
-                <!-- Résultats -->
-                <h3>Résultats :</h3>
-                <p>
-                  Ce projet a permis de développer une solution locale efficace pour la gestion des stocks, l’encaissement des clients et l’analyse des ventes dans la petite commune de Wulverdinghe. Face à la coupure d’Internet qui limitait l’accès aux outils de la centrale de Paris, nous avons réussi à mettre en place un système fonctionnel.
-                </p><br>
-
-                <!-- Lien vers le projet complet -->
-                <p>Projet complet en <a href="docs/conception.pdf" target="_blank"><strong>PDF</strong></a>.</p>
-              </div>
-            </div>
-
-            <div class="modal" id="modal4">
-              <div class="modal-content">
-                <h2>Estimation par sondage simple</h2>
-                <!-- Ajout de l'image -->
-                <img src="images/echantillon-population.jpg" alt="Citibike" class="modal-image">
-    
-                <!-- Présentation du projet -->
-                <h3>Présentation du projet :</h3>
-                <p>
-                  Ce projet vise à réaliser une étude de statistiques inférentielles sur des échantillons de données. L’objectif est de déterminer les différentes lois de probabilité pouvant être identifiées dans les données.
-                </p><br>
-
-                <!-- Utilisation de -->
-                <h3>Utilisation de :</h3>
-                <p>
-                • Langages de programmation : SAS, LaTeX pour la rédaction du rapport PDF
-                </p><br>
-
-                <!-- Résultats -->
-                <h3>Résultats :</h3>
-                <p>
-                  L’étude a révélé que chaque échantillon suit une loi de probabilité différente. Nous avons notamment identifié les lois log-normale, uniforme. Cette première analyse souligne que les échantillons ne partagent pas la même distribution, ce qui démontre l’importance de sélectionner des modèles statistiques adaptés à chaque type de distribution.
-                </p><br>
-
-                <!-- Lien vers le projet complet -->
-                <p>Projet complet en <a href="docs/RapportSAS.pdf" target="_blank"><strong>PDF</strong></a>.</p>
-              </div>
-            </div>
-          </section>
-
-          <script src="script.js"></script>
-        </main>
-    </body>
-</html>
+</body>
