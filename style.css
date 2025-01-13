@@ -609,3 +609,72 @@ h4 {
 }
 
 
+
+
+/* ================================
+   Responsive Design Adjustments
+   ================================ */
+
+/* Grille fluide pour les petites tailles d'écran */
+@media (max-width: 768px) {
+    .sticky-section__main-title {
+        font-size: 80px; /* Réduction de la taille du titre */
+    }
+
+    .sticky-section__txt-info {
+        font-size: 30px;
+    }
+
+    .content-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container-presentation {
+        width: 100%; /* Utilise toute la largeur disponible */
+    }
+
+    .card-container-presentation {
+        grid-template-columns: 1fr; /* Une seule colonne */
+        margin: 20px 0;
+    }
+
+    .cards-container {
+        flex-direction: column; /* Les cartes passent en colonne */
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%; /* Les cartes prennent toute la largeur */
+        max-width: 90%; /* Avec une marge pour éviter d'être collées */
+        margin: 0 auto;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 400px; /* Réduction pour les petits écrans */
+    }
+}
+
+/* Ajustements pour les très petits écrans (<576px) */
+@media (max-width: 576px) {
+    .sticky-section__main-title {
+        font-size: 60px;
+    }
+
+    .sticky-section__txt-info {
+        font-size: 20px;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .card-container-presentation {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    .card-wrapper-presentation {
+        min-height: 300px; /* Réduction de la hauteur */
+    }
+}
